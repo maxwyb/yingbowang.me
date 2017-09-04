@@ -2,12 +2,20 @@
 <html>
     <body>
 	<p>Hello World. Welcome to Yingbo (Max) Wang's personal website. Powered by Django and PostgreSQL. </p>
+	<p>
+	    <a href="https://maxwyb.github.io/">This is my personal blog hosted on GitHub.</a>
+	</p>
 	{% if latest_message_list %}
 	  <ul>
 	      {% for message in latest_message_list %}
-	        <li>{{ message.message_text }} </li>
+	      <li>{{ message.message_text }} </li>
 	      {% endfor %}
 	  </ul>
 	{% endif %}
+	<form method='post' class="form">
+	    {% csrf_token %}
+	    {{ post_form.as_p }}
+	    <input type='submit' value='Submit Post' />
+	</form>
     </body>
 </html>
