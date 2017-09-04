@@ -25,7 +25,9 @@ SECRET_KEY = '$3+@2$c^$ufnp^#@nbd-nqm%62cgvx1)&-oq1k5cwz^5wz&f8$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '45.79.88.6'
+]
 
 
 # Application definition
@@ -77,8 +79,9 @@ WSGI_APPLICATION = 'helloweb.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'personal-website',
-        'USER': 'postgre',
+        'NAME': 'personal-site',
+        'USER': 'postgres',
+        'PASSWORD': '',
         'HOST': '127.0.0.1',
         'PORT': '5432'
     }

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <body>
+	<p>Hello World. Welcome to Yingbo (Max) Wang's personal website. Powered by Django and PostgreSQL. </p>
+	{% if latest_message_list %}
+	  <ul>
+	      {% for message in latest_message_list %}
+	        <li>{{ message.message_text }} </li>
+	      {% endfor %}
+	  </ul>
+	{% endif %}
+    </body>
+</html>
