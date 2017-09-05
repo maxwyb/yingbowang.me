@@ -26,7 +26,10 @@ SECRET_KEY = '$3+@2$c^$ufnp^#@nbd-nqm%62cgvx1)&-oq1k5cwz^5wz&f8$'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '45.79.88.6'
+    '45.79.88.6',
+    'yingbowang.me',
+    'www.yingbowang.me',
+    'localhost'
 ]
 
 
@@ -125,3 +128,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = "/var/www/yingbowang.me/static/"
